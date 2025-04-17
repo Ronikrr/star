@@ -5,6 +5,7 @@ import video from '../assets/home-page-video.mp4'
 import Typewriter from 'typewriter-effect';
 import { TbMessagePlus } from 'react-icons/tb';
 import { AttentionSeeker } from 'react-awesome-reveal';
+import { Link } from 'react-router-dom';
 
 const MainBanner = () => {
   return (
@@ -24,31 +25,31 @@ const MainBanner = () => {
               wrapperClassName: 'span'
             }}
             onInit={(typewriter) => {
-              typewriter.typeString('From Rough to <strong style="color: #4E94F2;">Wonder</strong>')
+              typewriter.typeString('From Rough to <strong style="color: #7d1c4a;">Wonder</strong>')
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('<strong style="color: #4E94F2;">Advance</strong> technology & Expertise')
+                .typeString('<strong style="color: #7d1c4a;">Advance</strong> technology & Expertise')
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('Maximizing the <strong style="color: #4E94F2;">Brilliance</strong>')
+                .typeString('Maximizing the <strong style="color: #7d1c4a;">Brilliance</strong>')
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('Experience of <strong style="color: #4E94F2;">Ultra Luxury</strong>')
+                .typeString('Experience of <strong style="color: #7d1c4a;">Ultra Luxury</strong>')
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('Reflecting the <strong style="color: #4E94F2;">Promise</strong>')
+                .typeString('Reflecting the <strong style="color: #7d1c4a;">Promise</strong>')
                 .pauseFor(2500)
                 .deleteAll()
                 .start();
             }}
           />
         </h1>
-        <button
+        <Link to={'/contact-us'}
           className="flex items-center gap-2 px-2 py-3 transition-transform duration-500 ease-in-out transform bg-white border rounded-full text-tertiary border-tertiary lg:px-4 hover:scale-110"
         >
           <TbMessagePlus className="w-5 h-5" />
           <span className="text-sm leading-tight ">Contact Us</span>
-        </button>
+        </Link>
         <div className="flex flex-col gap-0 md:flex-row md:gap-8 ">
           <div className="text-center">
             <AttentionSeeker effect='heartBeat' triggerOnce><h2 className='text-secondary new_font text-[24px] text-center'>2800+</h2></AttentionSeeker>
