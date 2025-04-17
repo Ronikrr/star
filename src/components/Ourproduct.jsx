@@ -24,7 +24,7 @@ const ProductSection = ({ title, description, image, reverse }) => (
           </div>
         </div>
         <div className="flex justify-center w-full my-6">
-          <button className="flex items-center gap-2 text-[#024093] border border-[#024093] px-2 lg:px-4 py-2 hover:bg-tertiary uppercase hover:text-secondary rounded-full transform transition-transform duration-500 ease-in-out hover:scale-110">
+          <button className="flex items-center gap-2 px-2 py-2 uppercase transition-transform duration-500 ease-in-out transform border rounded-full text-tertiary border-tertiary lg:px-4 hover:bg-tertiary hover:text-secondary hover:scale-110">
             explore
           </button>
         </div>

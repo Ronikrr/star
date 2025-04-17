@@ -44,7 +44,7 @@ const MainBanner = () => {
           />
         </h1>
         <button
-          className="flex items-center gap-2 text-[#024093] border border-[#024093] px-2 lg:px-4 py-2 bg-white rounded-full  transform transition-transform duration-500 ease-in-out hover:scale-110"
+          className="flex items-center gap-2 px-2 py-3 transition-transform duration-500 ease-in-out transform bg-white border rounded-full text-tertiary border-tertiary lg:px-4 hover:scale-110"
         >
           <TbMessagePlus className="w-5 h-5" />
           <span className="text-sm leading-tight ">Contact Us</span>

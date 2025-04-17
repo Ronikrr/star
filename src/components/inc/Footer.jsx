@@ -1,5 +1,5 @@
 import React from "react";
-import blue_logo from "../../assets/image/logo_blue.svg";
+import blue_logo from "../../assets/image/logo/starimpex.ab9bd24d.png";
 import gia_logo from "../../assets/image/gia-logo.png";
 import hrd_logo from "../../assets/image/hrd-logo.png";
 import igi_logo from "../../assets/image/igi-logo.png";
@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between w-full">
           <div className="w-full md:w-4/12 lg:w-3/12">
             <a href="/">
-              <img src={blue_logo} className="w-24" alt="" />
+              <img src={blue_logo} className="w-[80%]" alt="" />
             </a>
             <div className="w-[80%] mt-2">
               <p className="break-words text-[14px] ">
@@ -44,9 +44,8 @@ const Footer = () => {
           <div className="w-full md:w-4/12 lg:w-3/12">
             <h5 className="mb-5 font-medium">Address</h5>
             <p className="mb-3">
-              {" "}
-              "2nd Floor, Plot-1,2,3,4, Radha Krushna Complex, Khodiyar ind.
-              Est., Katargam Main Rd, Katargam, Surat. Gujarat - 395004 (India)"
+              40, Gyan Prawah Apartment, Singanpor Rd, beside Jeevandeep Society, Jeevandeep Society, Katargam, Surat, Gujarat 395004
+
             </p>
           </div>
           <div className="w-full md:w-2/12 lg:w-1/12">

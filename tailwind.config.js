@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         primary: "rgb(33 33 33 / <alpha-value>)",           // #212121
         secondary: "rgb(255 255 255 / <alpha-value>)",       // #ffffff
-        tertiary: "rgb(2 64 147 / <alpha-value>)",           // #024093
+        tertiary: "rgb(125 28 74 / <alpha-value>)",           // #7d1c4a
         "tertiary-light": "rgb(240 246 254 / <alpha-value>)", // #f0f6fe
         "tertiary-dark": "rgb(4 35 67 / <alpha-value>)",     // #042343
         "customer-bg": "rgb(241 244 249 / <alpha-value>)",   // #f1f4f9

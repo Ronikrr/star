@@ -22,7 +22,7 @@ const ContactUsSection = () => {
             </div>
             <div className="pb-8 flex flex-col sm:flex-row gap-5 lg:w-[40vw] justify-center items-center lg:justify-between lg:mx-auto">
                 <a
-                    href={`tel:`}
+                    href={`tel:+919601600500`}
                     className="bg-white w-[250px] border border-tertiary/20 hover:border-tertiary rounded-3xl py-4 grid place-items-center hover:scale-105 hover:-translate-y-1 transition-transform duration-500"
                 >
                     <div className="w-[75px] h-[75px] relative flex justify-center items-center mb-3">
@@ -31,10 +31,10 @@ const ContactUsSection = () => {
                         </div>
                         <img src={phone} alt="phone icon" width={35} height={35} />
                     </div>
-                    <span>{}</span>
+                    <span>+919601600500</span>
                 </a>
                 <a
-                    href={`mailto:`}
+                    href={`mailto:info@starimpex.store`}
                     className="bg-white w-[250px] border border-tertiary/20 hover:border-tertiary rounded-3xl py-4 grid place-items-center hover:scale-105 hover:-translate-y-1 transition-transform duration-500"
                 >
                     <div className="w-[75px] h-[75px] relative flex justify-center items-center mb-3">
@@ -48,7 +48,7 @@ const ContactUsSection = () => {
                             height={35}
                         />
                     </div>
-                    <span>{}</span>
+                    <span>info@starimpex.store</span>
                 </a>
             </div>
         </section>

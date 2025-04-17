@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { FaUserPlus } from "react-icons/fa";
 import { TbMessagePlus } from "react-icons/tb";
-import logo from '../../assets/image/logo.svg';
-import logoDark from '../../assets/image/logo_blue.svg'; // <-- Add a darker version of the logo
+import logo from '../../assets/image/logo/starimpex-white.94a56f1a.png';
+import logoDark from '../../assets/image/logo/starimpex.ab9bd24d.png'; // <-- Add a darker version of the logo
 import { FaAngleDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const Header = () => {
@@ -45,7 +45,7 @@ const Header = () => {
                         <img
                             src={isScrolled ? logoDark : logo}
                             alt="logo"
-                            width={80}
+                            width={150}
                             height={40}
                             className="object-contain transition duration-500"
                         />
@@ -55,7 +55,7 @@ const Header = () => {
                     <div className="flex items-center gap-3">
                         <Link
                             to="/login"
-                            className={`flex items-center gap-2 border px-2 lg:px-4 py-2 rounded-full transform transition duration-500 ease-in-out hover:scale-110 ${isScrolled ? 'text-[#024093] border-[#024093] hover:bg-[#024093] hover:text-white' : 'text-white border-white hover:bg-white hover:text-[#024093]'
+                            className={`flex items-center gap-2 border px-2 lg:px-4 py-2 rounded-full transform transition duration-500 ease-in-out hover:scale-110 ${isScrolled ? 'text-tertiary border-tertiary hover:bg-tertiary hover:text-white' : 'text-white border-white hover:bg-white hover:text-tertiary'
                                 }`}
                         >
                             <FaUserPlus className="w-5 h-5" />
@@ -63,7 +63,7 @@ const Header = () => {
                         </Link>
 
                         <Link to="/contact"
-                            className={`hidden items-center gap-2 border px-2 lg:px-4 py-2 rounded-full transform transition duration-500 ease-in-out hover:scale-110 ${isScrolled ? 'text-[#024093] border-[#024093] hover:bg-[#024093] hover:text-white' : 'text-white border-white hover:bg-white hover:text-[#024093]'
+                            className={`hidden items-center gap-2 border px-2 lg:px-4 py-2 rounded-full transform transition duration-500 ease-in-out hover:scale-110 ${isScrolled ? 'text-tertiary border-tertiary hover:bg-tertiary hover:text-white' : 'text-white border-white hover:bg-white hover:text-tertiary'
                                 }`}
                         >
                             <TbMessagePlus className="w-5 h-5" />
