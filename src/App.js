@@ -8,7 +8,12 @@ import LabGrownDiamonds from './pages/product/LabGrownDiamonds';
 import Naturaldiaonds from './pages/product/Naturaldiaonds';
 import Inquireloosediamond from './pages/Inquireloosediamond';
 import Contactuspage from './pages/Contactuspage';
-import { Routes ,Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Dimondguide from './pages/Dimondguide';
+import Privacypolicy from './pages/Privacypolicy';
+import Termsandcondition from './pages/Termsandcondition';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -22,6 +27,11 @@ function App() {
         <Route path="/our-products/Naturaldiaonds" element={<Naturaldiaonds />} />
         <Route path="/inquiry" element={<Inquireloosediamond />} />
         <Route path="/contact-us" element={<Contactuspage />} />
+        <Route path="/guide" element={<Dimondguide />} />
+        <Route path="/privacy-policy" element={<Privacypolicy />} />
+        <Route path="/terms" element={<Termsandcondition />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
       <Footer />
     </>

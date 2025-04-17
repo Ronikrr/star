@@ -1,5 +1,7 @@
 import React from 'react';
 import vector_bg from "../assets/image/vector-bg-3.a112de0b.svg";
+import { Link } from 'react-router-dom';
+import { TbMessagePlus } from 'react-icons/tb';
 
 const Banner = ({ title = "", heroImage = "", description = "" }) => {
   return (
@@ -11,6 +13,15 @@ const Banner = ({ title = "", heroImage = "", description = "" }) => {
         {heroImage ? <img loading="lazy" src={heroImage} alt={`${title}`} className='object-cover object-center w-full h-full' /> : null}
       </div>
       <h1 className='mb-3 text-center uppercase new_font text-30 lg:text-36 text-secondary'>{title}</h1>
+      <div className="flex items-center justify-center w-full">
+        <Link to="/contact-us"
+          className={`flex  items-center gap-2 border px-2 lg:px-4 py-2 rounded-full transform transition duration-500 ease-in-out hover:scale-110  text-white border-white hover:bg-white hover:text-tertiary
+          }`}
+        >
+          <TbMessagePlus className="w-5 h-5" />
+          <span className="hidden text-sm leading-tight uppercase lg:block">Contact Us</span>
+        </Link>
+      </div>
       {description ? <p className='content-text text-secondary text-center w-[80dvw] sm:w-[60dvw] lg:w-[35dvw] mx-auto'>{description}</p> : null}
     </section>
   )

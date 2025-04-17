@@ -11,8 +11,12 @@ const Header = () => {
     const [showDropdown, setShowDropdown] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation()
+
     useEffect(() => {
         const handleScroll = () => {
+
+
+
             const scrollY = window.scrollY;
             setIsScrolled(scrollY > 100);
 
@@ -24,7 +28,7 @@ const Header = () => {
         window.addEventListener("scroll", handleScroll);
 
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [slidebar]);
+    }, [slidebar, location]);
     const onclicklink = () => {
         setSlidebar(false);
     }
@@ -32,7 +36,7 @@ const Header = () => {
     return (
         <header className="relative">
             {/* Top Nav */}
-            <div className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'} py-4`}>
+            <div className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500   ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'} py-4`}>
                 <div className="flex items-center justify-between px-4 lg:px-8">
                     {/* Hamburger Button */}
                     <button className="z-50" onClick={() => setSlidebar(!slidebar)}>
@@ -55,7 +59,7 @@ const Header = () => {
                     </Link>
 
                     {/* Auth Buttons */}
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center w-1.5/12 gap-3">
                         <Link
                             to="/login"
                             className={`flex items-center gap-2 border px-2 lg:px-4 py-2 rounded-full transform transition duration-500 ease-in-out hover:scale-110 ${isScrolled ? 'text-tertiary border-tertiary hover:bg-tertiary hover:text-white' : 'text-white border-white hover:bg-white hover:text-tertiary'
@@ -94,16 +98,17 @@ const Header = () => {
 
                         {showDropdown && (
                             <ul className="mt-2 ml-4 *:mb-3 text-[14px] space-y-2 text-sm bg-transparent pt-3 rounded">
-                                <li><Link onClick={onclicklink} to="/our-products/Naturaldiaonds" className="block hover:underline"> Natural Diamonds </Link></li>
-                                <li><Link onClick={onclicklink} to="/our-products/LabGrownDiamonds" className="block hover:underline"> Lab Grown Diamonds </Link></li>
-                                <li><Link onClick={onclicklink} to="/our-products/DiamondJewelry" className="block hover:underline"> Diamond Jewelry </Link></li>
+                                <li><Link onClick={onclicklink} to="/our-products/Naturaldiaonds" className=""> Natural Diamonds </Link></li>
+                                <li><Link onClick={onclicklink} to="/our-products/LabGrownDiamonds" className=""> Lab Grown Diamonds </Link></li>
+                                <li><Link onClick={onclicklink} to="/our-products/DiamondJewelry" className=""> Diamond Jewelry </Link></li>
                             </ul>
                         )}
                     </li>
-                    <li><Link onClick={onclicklink} to="/inquiry" className="block hover:underline"> Inquire for Loose Parcel Diamonds </Link></li>
-                    <li><Link onClick={onclicklink} to="#" className="block hover:underline"> Diamonds 4C Guide </Link></li>
-                    <li><Link onClick={onclicklink} to="#" className="block hover:underline"> Privacy Policy </Link></li>
-                    <li><Link onClick={onclicklink} to="/contact-us" className="block hover:underline"> Contact us </Link></li>
+                    <li><Link onClick={onclicklink} to="/inquiry" className=""> Inquire for Loose Parcel Diamonds </Link></li>
+                    <li><Link onClick={onclicklink} to="/guide" className=""> Diamonds 4C Guide </Link></li>
+                    <li><Link onClick={onclicklink} to="/privacy-policy" className=""> Privacy Policy </Link></li>
+                    <li><Link onClick={onclicklink} to="/terms" className=""> Terms & Conditions </Link></li>
+                    <li><Link onClick={onclicklink} to="/contact-us" className=""> Contact us </Link></li>
                 </ul>
             </div>
         </header>

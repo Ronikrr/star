@@ -12,7 +12,7 @@ const Contactusfrom = () => {
                     First Name
                 </label>
                 <input
-                    className="rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                    className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     type="text"
                     name="name"
                     id="inp-name"
@@ -24,7 +24,7 @@ const Contactusfrom = () => {
                     Last Name
                 </label>
                 <input
-                    className="rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                    className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     type="text"
                     name="surname"
                     id="inp-surname"
@@ -43,7 +43,7 @@ const Contactusfrom = () => {
                         placeholder="Enter phone number"
                         international
                         countryCallingCodeEditable={false}
-                        className="rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                        className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     />
                 </div>
                 <div className="grid gap-[.25rem]">
@@ -52,7 +52,7 @@ const Contactusfrom = () => {
                     </label>
                     <div>
                         <select
-                            className="w-full rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                            className="w-full rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                             name="country"
                             id="inp-country"
                         >
@@ -73,7 +73,7 @@ const Contactusfrom = () => {
                         Email
                     </label>
                     <input
-                        className="rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                        className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                         type="text"
                         name="email"
                         id="inp-email"
@@ -86,7 +86,7 @@ const Contactusfrom = () => {
                     Message
                 </label>
                 <textarea
-                    className="rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                    className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     name="message"
                     id="inp-message"
                     placeholder="Describe your message..."

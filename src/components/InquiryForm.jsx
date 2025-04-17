@@ -13,7 +13,7 @@ const InquiryForm = () => {
                     First Name
                 </label>
                 <input
-                    className="rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                    className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     type="text"
                     name="name"
                     id="inp-name"
@@ -27,7 +27,7 @@ const InquiryForm = () => {
                     Last Name
                 </label>
                 <input
-                    className="rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                    className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     type="text"
                     name="surname"
                     id="inp-surname"
@@ -47,7 +47,7 @@ const InquiryForm = () => {
 
                     international
                     countryCallingCodeEditable={false}
-                    className="rounded-[1rem] border border-primary px-[1rem] py-[0.75rem]  !px-2 !outline-none focus:!outline-none"
+                    className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem]  !px-2 !outline-none focus:!outline-none"
                 />
             </div>
             <div className="grid gap-[.25rem]">
@@ -55,7 +55,7 @@ const InquiryForm = () => {
                     Email
                 </label>
                 <input
-                    className="rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                    className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     type="text"
                     name="email"
                     id="inp-email"
@@ -68,7 +68,7 @@ const InquiryForm = () => {
                     Company Name
                 </label>
                 <input
-                    className="rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                    className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     type="text"
                     name="company-name"
                     id="inp-companyname"
@@ -84,7 +84,7 @@ const InquiryForm = () => {
                     <select
                         id="inp-diamond-type"
                         name="diamond-type"
-                        className="w-full rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                        className="w-full rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     >
                         <option disabled value="">
                             Select Diamond Type
@@ -110,7 +110,7 @@ const InquiryForm = () => {
                     <select
                         id="inp-country"
                         name="country"
-                        className="w-full rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                        className="w-full rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
 
                     >
                         <option disabled value="">
@@ -130,7 +130,7 @@ const InquiryForm = () => {
                     Message
                 </label>
                 <textarea
-                    className="rounded-[1rem] border border-primary px-[1rem] py-[0.75rem] "
+                    className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     name="message"
                     id="inp-message"
                     placeholder="Describe your message..."
