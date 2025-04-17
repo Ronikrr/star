@@ -18,7 +18,16 @@ const Header = () => {
         <header className="relative">
             {/* Top Nav */}
             <div className={`fixed top-0 left-0 right-0  transition-all duration-500 z-50   bg-white shadow-md py-4`}>
-                <div className="flex items-center justify-between px-4 lg:px-8">
+                <Link href="/" className="items-center justify-center hidden w-full lg:flex lg:absolute" >
+                    <img
+                        src={logoDark}
+                        alt="logo"
+                        width={150}
+                        height={40}
+                        className="object-contain transition duration-500"
+                    />
+                </Link>
+                <div className="relative flex items-center justify-between px-4 lg:px-8 ">
                     {/* Hamburger Button */}
                     <button className="z-50" onClick={() => setSlidebar(!slidebar)}>
                         <div className="flex flex-col gap-1">
@@ -29,16 +38,16 @@ const Header = () => {
                     </button>
 
                     {/* Logo */}
-                    <Link href="/">
+
+                    <Link href="/" className="block lg:hidden" >
                         <img
-                            src={logoDark }
+                            src={logoDark}
                             alt="logo"
                             width={150}
                             height={40}
                             className="object-contain transition duration-500"
                         />
                     </Link>
-
                     {/* Auth Buttons */}
                     <div className="flex items-center w-1.5/12 gap-3">
                         <Link
