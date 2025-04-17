@@ -27,9 +27,9 @@ const ContactUsSection = () => {
                 >
                     <div className="w-[75px] h-[75px] relative flex justify-center items-center mb-3">
                         <div className="absolute w-full h-full bg-no-repeat bg-contain " >
-                            <img src={vector_bg} alt="" />
+                            <img loading="lazy" src={vector_bg} alt="" />
                         </div>
-                        <img src={phone} alt="phone icon" width={35} height={35} />
+                        <img loading="lazy" src={phone} alt="phone icon" width={35} height={35} />
                     </div>
                     <span>+919601600500</span>
                 </a>
@@ -39,7 +39,7 @@ const ContactUsSection = () => {
                 >
                     <div className="w-[75px] h-[75px] relative flex justify-center items-center mb-3">
                         <div className="absolute w-full h-full bg-no-repeat bg-contain " >
-                            <img src={vector_bg} alt="" />
+                            <img loading="lazy" src={vector_bg} alt="" />
                         </div>
                         <img
                             src={message}

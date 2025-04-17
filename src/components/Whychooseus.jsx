@@ -50,9 +50,9 @@ const Whychooseus = () => {
                       {whyChooseUsContent.map((data, index) => <div key={`why-choose-us-${index}`} className="bg-white w-[280px] border border-tertiary/20 rounded-3xl p-4 group hover:scale-105 hover:-translate-y-1 transition-transform duration-500">
                           <div className='w-[90px] h-[90px] relative flex justify-center items-center mb-5 mx-auto'>
                               <div className='absolute w-full h-full bg-no-repeat bg-contain' >
-                                  <img src={vector_bg} alt="" />
+                                  <img loading="lazy" src={vector_bg} alt="" />
                                   </div>
-                              <img src={data.logo} alt='diamond icon' width={65} height={65} />
+                              <img loading="lazy" src={data.logo} alt='diamond icon' width={65} height={65} />
                           </div>
                           <div className="pb-5">
                               <h5 className="mb-4 text-center uppercase new_font text-primary">{data.title}</h5>

@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between w-full">
           <div className="w-full md:w-4/12 lg:w-3/12">
             <a href="/">
-              <img src={blue_logo} className="w-[80%]" alt="" />
+              <img loading="lazy" src={blue_logo} className="w-[80%]" alt="" />
             </a>
             <div className="w-[80%] mt-2">
               <p className="break-words text-[14px] ">
@@ -90,16 +90,16 @@ const Footer = () => {
           </ul>
           <div className="flex flex-row w-3/12 gap-5 ">
             <div className="w-full h-full ">
-              <img src={gia_logo} alt="" className="object-contain w-full h-full"  />
+              <img loading="lazy" src={gia_logo} alt="" className="object-contain w-full h-full" />
             </div>
             <div className="w-full h-full ">
-              <img src={hrd_logo} alt="" className="object-contain w-full h-full"  />
+              <img loading="lazy" src={hrd_logo} alt="" className="object-contain w-full h-full" />
             </div>
             <div className="w-full h-full ">
-              <img src={igi_logo} alt="" className="object-contain w-full h-full"  />
+              <img loading="lazy" src={igi_logo} alt="" className="object-contain w-full h-full" />
             </div>
             <div className="w-full h-full ">
-              <img src={rapnet_logo} alt="" className="object-contain w-full h-full"  />
+              <img loading="lazy" src={rapnet_logo} alt="" className="object-contain w-full h-full" />
             </div>
           </div>
         </div>

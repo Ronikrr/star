@@ -10,7 +10,7 @@ const DiamondJewelry = () => {
         <div className="mx-3 sm:col-span-10 sm:col-start-2">
           <p className="text-center">{jewelryDiamondsContent.description}</p>
           <div className="w-3/4 mx-auto my-8 overflow-hidden transition-transform ease-in-out border-4 rounded-sm border-tertiary group hover:scale-105">
-            <img src={jewelryDiamondsContent.image} alt="diamond jewelry" className="object-cover duration-500 group-hover:scale-105" />
+            <img loading="lazy" src={jewelryDiamondsContent.image} alt="diamond jewelry" className="object-cover duration-500 group-hover:scale-105" />
           </div>
           <h4 className="mb-3 title mt-7 text-tertiary">Our offerings are as follows:</h4>
           <ul className="list-disc list-inside">

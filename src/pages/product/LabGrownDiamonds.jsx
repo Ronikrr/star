@@ -56,6 +56,7 @@ const LabGrownDiamonds = () => {
                   src={offeringBackgroundImages[index]}
                   alt="offering background image"
                   className="w-full duration-500 group-hover:scale-110"
+                  loading='lazy'
                 />
                 <div className="absolute w-full h-full bg-black/50 z-[1] inset-0">
                   <div className="flex items-center justify-center h-full px-10">

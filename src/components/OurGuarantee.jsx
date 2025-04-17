@@ -30,10 +30,10 @@ export const aboutUsContent = [
 const OurGuarantee = () => {
   return (
     <div className="relative grid sm:grid-cols-12">
-      <img src={bgImage1} alt="shape in background" className="absolute right-0" />
-      <img src={bgImage3} alt="shape in background" className="absolute top-[10%] left-[10%]" />
-      <img src={bgImage3} alt="shape in background" className="absolute bottom-[20%] right-[10%]" />
-      <img src={bgImage2} alt="shape in background" className="absolute bottom-0 left-0" />
+      <img loading="lazy" src={bgImage1} alt="shape in background" className="absolute right-0" />
+      <img loading="lazy" src={bgImage3} alt="shape in background" className="absolute top-[10%] left-[10%]" />
+      <img loading="lazy" src={bgImage3} alt="shape in background" className="absolute bottom-[20%] right-[10%]" />
+      <img loading="lazy" src={bgImage2} alt="shape in background" className="absolute bottom-0 left-0" />
       <div className="sm:col-span-10 sm:col-start-2">
         <div className="mx-3 my-8 lg:my-16">
           <p className="text-center content-text text-primary">Motiba Gems was founded in 2002 by Pareshbhai Moradiya, with a manufacturing facility located in Surat. Over the years, the company has experienced significant business growth, supported by a skilled workforce. In 2017, Motiba Gems expanded its operations to include rough diamond imports from overseas. Today, the company stands as a prominent trader & supplier to B2B customers from all over the globe for both Certified and Non-Certified Diamonds in Natural and LGDs. As well as designer diamond jewelry.</p>
@@ -42,7 +42,7 @@ const OurGuarantee = () => {
           {
             aboutUsContent.map((data, index) => <div key={`about-us-${index}`} className="grid px-3 py-8 sm:grid-cols-2 place-items-center place-content-center">
               <div className={`sm:w-[60%] mx-auto mb-3 ${index % 2 !== 0 ? 'sm:order-2' : ''}`}>
-                <img src={data.image} alt={`depicting ${data.title}`} />
+                <img loading="lazy" src={data.image} alt={`depicting ${data.title}`} />
               </div>
               <div className={`${index % 2 !== 0 ? 'sm:order-1' : ''}`}>
                 <h2 className="mb-8 font-bold text-center new_font text-24 text-primary">{data.title}</h2>

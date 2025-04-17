@@ -5,7 +5,7 @@ import vector_bg from "../assets/image/vector-bg-3.a112de0b.svg";
 const ProductSection = ({ title, description, image, reverse }) => (
   <div className="relative flex flex-col gap-5 my-10 bg-customer-bg">
     <div className={`absolute top-[45%] ${reverse ? "right-[5%]" : "md:left-[5%]"}`}>
-      <img src={vector_bg} alt="" />
+      <img loading="lazy" src={vector_bg} alt="" />
     </div>
     <div className={`container flex flex-col mx-auto md:flex-row ${reverse ? "md:flex-row-reverse" : ""}`}>
       <div className="w-full pt-6 md:pt-0 md:w-6/12">
