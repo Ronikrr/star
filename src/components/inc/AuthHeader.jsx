@@ -1,15 +1,13 @@
 
-import React, { useState, useEffect } from "react";
-import { FaUserPlus } from "react-icons/fa";
+import React, { useState } from "react";
 import { TbMessagePlus } from "react-icons/tb";
 import logoDark from '../../assets/image/logo/starimpex-white.94a56f1a.png';
 import { FaAngleDown } from "react-icons/fa6";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Header = () => {
     const [slidebar, setSlidebar] = useState(false);
     const [showDropdown, setShowDropdown] = useState(false);
-    
-    const location = useLocation()
+
     const onclicklink = () => {
         setSlidebar(false);
     }
@@ -18,15 +16,17 @@ const Header = () => {
         <header className="relative">
             {/* Top Nav */}
             <div className={`fixed top-0 left-0 right-0   transition-all duration-500 z-[50]  bg-tertiary shadow-md py-4`}>
-                <NavLink to="/" className="items-center justify-center hidden w-full lg:flex lg:absolute" >
-                    <img
-                        src={logoDark}
-                        alt="logo"
-                        width={150}
-                        height={40}
-                        className="object-contain transition duration-500"
-                    />
-                </NavLink>
+                <div className="items-center justify-center hidden w-full lg:flex lg:absolute">
+                    <NavLink to="/" className="" >
+                        <img
+                            src={logoDark}
+                            alt="logo"
+                            width={150}
+                            height={40}
+                            className="object-contain transition duration-500"
+                        />
+                    </NavLink>
+                </div>
                 <div className="relative flex items-center justify-between px-4 lg:px-8 ">
                     {/* Hamburger Button */}
                     <button className="z-50" onClick={() => setSlidebar(!slidebar)}>
@@ -36,9 +36,6 @@ const Header = () => {
                             <span className={`w-7 h-1 rounded-full transition-all bg-white  duration-300 ease-in-out ${slidebar ? "-rotate-45 -translate-y-2 " : ""}`} />
                         </div>
                     </button>
-
-                    {/* Logo */}
-
                     <NavLink to="/" className="block cursor-pointer lg:hidden" >
                         <img
                             src={logoDark}
@@ -50,16 +47,13 @@ const Header = () => {
                     </NavLink>
                     {/* Auth Buttons */}
                     <div className="flex items-center w-1.5/12 gap-3">
-
-
                         <NavLink to="/contact-us"
                             className={`flex  items-center gap-2 border px-2 lg:px-4 py-2 rounded-full transform transition duration-500 ease-in-out hover:scale-110 text-white border-white hover:bg-white hover:text-tertiary
                                     }`}
-                            >
-                                <TbMessagePlus className="w-5 h-5" />
-                                <span className="hidden text-sm leading-tight uppercase lg:block">Contact Us</span>
+                        >
+                            <TbMessagePlus className="w-5 h-5" />
+                            <span className="hidden text-sm leading-tight uppercase lg:block">Contact Us</span>
                         </NavLink>
-
                     </div>
                 </div>
             </div>

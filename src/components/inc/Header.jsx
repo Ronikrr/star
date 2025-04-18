@@ -32,7 +32,8 @@ const Header = () => {
         <header className="relative">
             {/* Top Nav */}
             <div className={`fixed top-0 left-0 right-0    transition-all duration-500 z-50   ${isScrolled ? 'bg-tertiary shadow-md' : 'bg-transparent'} py-4`}>
-                <NavLink to="/" className="items-center justify-center hidden w-full lg:flex lg:absolute"  >
+                <div className="items-center justify-center hidden w-full lg:flex lg:absolute">
+                    <NavLink to="/" className=""  >
                     <img
                         src={logo}
                         alt="logo"
@@ -41,6 +42,7 @@ const Header = () => {
                         className="object-contain transition duration-500"
                     />
                 </NavLink>
+                </div>
                 <div className="flex items-center justify-between px-4 lg:px-8">
                     {/* Hamburger Button */}
                     <button className="z-50" onClick={() => setSlidebar(!slidebar)}>
