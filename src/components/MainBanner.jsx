@@ -25,19 +25,19 @@ const MainBanner = () => {
               wrapperClassName: 'span'
             }}
             onInit={(typewriter) => {
-              typewriter.typeString('From Rough to <strong style="color: #7d1c4a;">Wonder</strong>')
+              typewriter.typeString('From Rough to <strong style="color: #024193;">Wonder</strong>')
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('<strong style="color: #7d1c4a;">Advance</strong> technology & Expertise')
+                .typeString('<strong style="color: #024193;">Advance</strong> technology & Expertise')
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('Maximizing the <strong style="color: #7d1c4a;">Brilliance</strong>')
+                .typeString('Maximizing the <strong style="color: #024193;">Brilliance</strong>')
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('Experience of <strong style="color: #7d1c4a;">Ultra Luxury</strong>')
+                .typeString('Experience of <strong style="color: #024193;">Ultra Luxury</strong>')
                 .pauseFor(2500)
                 .deleteAll()
-                .typeString('Reflecting the <strong style="color: #7d1c4a;">Promise</strong>')
+                .typeString('Reflecting the <strong style="color: #024193;">Promise</strong>')
                 .pauseFor(2500)
                 .deleteAll()
                 .start();

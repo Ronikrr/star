@@ -12,17 +12,17 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Dimondguide from "./pages/Dimondguide";
 import Privacypolicy from "./pages/Privacypolicy";
 import Termsandcondition from "./pages/Termsandcondition";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
 import AuthHeader from "./components/inc/AuthHeader";
 import PageTitle from "./components/ui/PageTitle";
+import ScrollToTop from "./components/ui/ScrollToTop";
 function App() {
   const location = useLocation();
-  const authRoutes = ["/login", "/signup", "/privacy-policy", "/terms"];
+  const authRoutes = ["/privacy-policy", "/terms"];
 
   const isAuthRoute = authRoutes.includes(location.pathname);
   return (
     <>
+      <ScrollToTop />
       {isAuthRoute ? <AuthHeader /> : <MainHeader />}
       <Routes>
         <Route
@@ -112,24 +112,6 @@ function App() {
             <>
               <PageTitle title={"Terms & conditions"} />
               <Termsandcondition />
-            </>
-          }
-        />
-        <Route
-          path="/login"
-          element={
-            <>
-              <PageTitle title={"Login Page"} />
-              <Login />
-            </>
-          }
-        />
-        <Route
-          path="/signup"
-          element={
-            <>
-              <PageTitle title={"Signup Page"} />
-              <Signup />
             </>
           }
         />

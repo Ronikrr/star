@@ -1,21 +1,19 @@
 import React from "react";
-import blue_logo from "../../assets/image/logo/starimpex.ab9bd24d.png";
-import gia_logo from "../../assets/image/gia-logo.png";
-import hrd_logo from "../../assets/image/hrd-logo.png";
-import igi_logo from "../../assets/image/igi-logo.png";
-import rapnet_logo from "../../assets/image/rapnet-logo.png";
+import igi_logo from "../../assets/image/igi/igi-footer-logo.svg";
+import logo from '../../assets/image/logo/starimpex-white.94a56f1a.png';
 import { LuFacebook } from "react-icons/lu";
 import { FaInstagram } from "react-icons/fa6";
 import { SlSocialLinkedin } from "react-icons/sl";
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className="bg-customer-bg/100 ">
+    <footer className="text-white bg-tertiary ">
       <div className="relative w-full px-3 py-5 md:w-[85%] md:mx-auto ">
         <div className="flex flex-wrap justify-between w-full">
           <div className="w-full md:w-4/12 lg:w-3/12">
-            <a href="/">
-              <img loading="lazy" src={blue_logo} className="w-[80%]" alt="" />
-            </a>
+            <NavLink to="/">
+              <img loading="lazy" src={logo} className="w-[50%]" alt="" />
+            </NavLink>
             <div className="w-[80%] mt-2">
               <p className="break-words text-[14px] ">
                 A manufacturer and supplier of Natural & Lab Grown Diamonds in
@@ -28,44 +26,43 @@ const Footer = () => {
             <h5 className="mb-5 font-medium">Our product</h5>
             <ul className="flex flex-col gap-4 text-[14px] ">
               <li>
-                {" "}
-                <a href="# ">Natural Diamonds</a>{" "}
+                <NavLink to="/our-products/Naturaldiaonds">Natural Diamonds</NavLink>
               </li>
               <li>
-                {" "}
-                <a href="# ">Lab Grown Diamonds</a>{" "}
+                <NavLink to="/our-products/LabGrownDiamonds">Lab Grown Diamonds</NavLink>
               </li>
               <li>
-                {" "}
-                <a href="# ">Diamond Jewelry</a>{" "}
+                <NavLink to="/our-products/DiamondJewelry">Diamond Jewelry</NavLink>
               </li>
             </ul>
           </div>
           <div className="w-full md:w-4/12 lg:w-3/12">
             <h5 className="mb-5 font-medium">Address</h5>
-            <p className="mb-3">
-              40, Gyan Prawah Apartment, Singanpor Rd, beside Jeevandeep Society, Jeevandeep Society, Katargam, Surat, Gujarat 395004
+            <address className="not-italic leading-relaxed">
+              40, Gyan Prawah Apartment, Singanpor Rd,<br />
+              Beside Jeevandeep Society, Katargam,<br />
+              Surat, Gujarat 395004
+            </address>
 
-            </p>
           </div>
           <div className="w-full md:w-2/12 lg:w-1/12">
             <h5 className="mb-5 font-medium">Quick Links</h5>
-            <ul className="flex flex-col gap-4 text-[14px] ">
+            <ul className="flex flex-col gap-4 text-14 ">
               <li>
-                {" "}
-                <a href="# ">About us</a>{" "}
+
+                <NavLink to="/about-us">About us</NavLink>
               </li>
               <li>
-                {" "}
-                <a href="# ">Contact us</a>{" "}
+
+                <NavLink to="/contact-us">Contact us</NavLink>
               </li>
               <li>
-                {" "}
-                <a href="# ">Privacy policy</a>{" "}
+
+                <NavLink to="/privacy-policy">Privacy policy</NavLink>
               </li>
               <li>
-                {" "}
-                <a href="# ">Terms & Conditions</a>{" "}
+
+                <NavLink to="/terms">Terms & Conditions</NavLink>
               </li>
             </ul>
           </div>
@@ -73,38 +70,30 @@ const Footer = () => {
         <div className="flex flex-col w-full pt-3 md:flex-row md:justify-between">
           <ul className="flex items-center gap-5 ">
             <li className="w-[30px] h-[30px]">
-              <a href="" className="w-full h-full">
+              <NavLink to="" className="w-full h-full">
                 <LuFacebook className="w-full h-full" />
-              </a>
+              </NavLink>
             </li>
             <li className="w-[30px] h-[30px]">
-              <a href="" className="w-full h-full">
+              <NavLink to="" className="w-full h-full">
                 <FaInstagram className="w-full h-full" />
-              </a>
+              </NavLink>
             </li>
             <li className="w-[30px] h-[30px]">
-              <a href="" className="w-full h-full">
+              <NavLink to="" className="w-full h-full">
                 <SlSocialLinkedin className="w-full h-full" />
-              </a>
+              </NavLink>
             </li>
           </ul>
-          <div className="flex flex-row w-3/12 gap-5 ">
-            <div className="w-full h-full ">
-              <img loading="lazy" src={gia_logo} alt="" className="object-contain w-full h-full" />
-            </div>
-            <div className="w-full h-full ">
-              <img loading="lazy" src={hrd_logo} alt="" className="object-contain w-full h-full" />
-            </div>
-            <div className="w-full h-full ">
+          <div className="flex justify-end w-2/12 gap-5 ">
+
+            <div className="w-5/12 h-full ">
               <img loading="lazy" src={igi_logo} alt="" className="object-contain w-full h-full" />
-            </div>
-            <div className="w-full h-full ">
-              <img loading="lazy" src={rapnet_logo} alt="" className="object-contain w-full h-full" />
             </div>
           </div>
         </div>
       </div>
-
+      <hr />
       <div className="flex items-center justify-center text-center h-[50px] w-full lg:h-[25px] bg-tertiary text-white text-[14px] ">
         Copyright © 2025 Motiba Gems. All Rights Reserved.
       </div>
