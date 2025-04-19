@@ -22,10 +22,11 @@ const MainBanner = () => {
               delay: 50,
               deleteSpeed: 50,
               cursor: '',
-              wrapperClassName: 'span'
+              wrapperClassName: 'span',
             }}
             onInit={(typewriter) => {
-              typewriter.typeString('From Rough to <strong style="color: #024193;">Wonder</strong>')
+              typewriter
+                .typeString('From Rough to <strong style="color: #024193;">Wonder</strong>')
                 .pauseFor(2500)
                 .deleteAll()
                 .typeString('<strong style="color: #024193;">Advance</strong> technology & Expertise')
@@ -40,9 +41,13 @@ const MainBanner = () => {
                 .typeString('Reflecting the <strong style="color: #024193;">Promise</strong>')
                 .pauseFor(2500)
                 .deleteAll()
+                .typeString('Unlocking Journeys with <strong style="color: #024193;">Inspiring Travel</strong>')
+                .pauseFor(2500)
+                .deleteAll()
                 .start();
             }}
           />
+
         </h1>
         <Link to={'/contact-us'}
           className="flex items-center gap-2 px-2 py-3 transition-transform duration-500 ease-in-out transform bg-white border rounded-full text-tertiary border-tertiary lg:px-4 hover:scale-110"

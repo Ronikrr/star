@@ -3,16 +3,16 @@ import { FaWhatsapp } from "react-icons/fa";
 const team = [
     {
         id: 1,
-        img: '',
+        img: 'https://res.cloudinary.com/duryg51ts/image/upload/v1737962669/profile_Image/rzcjgoxqvdc0j4lzckrd.jpg',
         name: '', post: '', whatsapp: ''
     }, {
         id: 2,
-        img: '',
+        img: 'https://res.cloudinary.com/duryg51ts/image/upload/v1737962669/profile_Image/rzcjgoxqvdc0j4lzckrd.jpg',
         name: '', post: '', whatsapp: ''
     }, {
         id: 3,
-        img: '',
-        name: '', post: '', whatsapp: ''
+        img: 'https://res.cloudinary.com/duryg51ts/image/upload/v1737962669/profile_Image/rzcjgoxqvdc0j4lzckrd.jpg',
+        name: 'Bhaktesh Gadhiya', post: 'ceo', whatsapp: ''
     }
 ]
 const OwnerSection = () => {
