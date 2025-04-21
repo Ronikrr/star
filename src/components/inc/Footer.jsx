@@ -95,7 +95,7 @@ const Footer = () => {
       </div>
       <hr />
       <div className="flex items-center justify-center text-center h-[50px] w-full lg:h-[25px] bg-tertiary text-white text-[14px] ">
-        Copyright © 2025 Motiba Gems. All Rights Reserved.
+        Copyright © 2025 Star impex All Rights Reserved.
       </div>
     </footer>
   );
