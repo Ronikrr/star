@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 const team = [
     {
         id: 1,
@@ -35,9 +36,9 @@ const OwnerSection = () => {
                                         <h1 className='mb-1 capitalize text-[22px] font-semibold ' >name</h1>
                                         <p className='mb-1 capitalize text-16' >post</p>
                                         <div className="flex items-center justify-center">
-                                            <a href='#' className="w-[50px] h-[50px] rounded-lg bg-gray-100  flex justify-center border border-gray-400  items-center ">
+                                            <Link to='#' className="w-[50px] h-[50px] rounded-lg bg-gray-100  flex justify-center border border-gray-400  items-center ">
                                                 <FaWhatsapp className='text-2xl ' />
-                                            </a>
+                                            </Link>
     
                                         </div>
                                     </div>
