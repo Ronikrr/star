@@ -1,22 +1,45 @@
 import React from "react";
 import vector_bg from "../assets/image/vector-bg-3.a112de0b.svg";
+import { motion } from "framer-motion";
 
-// Reusable Section Component
+const fadeIn = (direction = "left") => ({
+  hidden: {
+    opacity: 0,
+    x: direction === "left" ? -100 : direction === "right" ? 100 : 0,
+    // y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+});
+
 const ProductSection = ({ title, description, image, reverse }) => (
-  <div className="relative flex flex-col gap-5 my-10 bg-customer-bg">
+  <motion.div
+    className="relative flex flex-col gap-5 my-10 bg-customer-bg"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={fadeIn(reverse ? "right" : "left")}
+  >
     <div className={`absolute top-[45%] ${reverse ? "right-[5%]" : "md:left-[5%]"}`}>
       <img loading="lazy" src={vector_bg} alt="" />
     </div>
     <div className={`container flex flex-col mx-auto md:flex-row ${reverse ? "md:flex-row-reverse" : ""}`}>
-      <div className="w-full pt-6 md:pt-0 md:w-6/12">
+      <motion.div className="w-full pt-6 md:pt-0 md:w-6/12" variants={fadeIn("up")}>
         <img
           loading="lazy"
           src={image}
           className="object-contain sm:w-[60%] mx-auto h-full"
           alt={title}
         />
-      </div>
-      <div className="flex flex-col items-start justify-center w-full py-5 text-center md:w-6/12">
+      </motion.div>
+      <motion.div
+        className="flex flex-col items-start justify-center w-full py-5 text-center md:w-6/12"
+        variants={fadeIn("down")}
+      >
         <h4 className="w-full mb-6 uppercase new_font">{title}</h4>
         <div className="w-full text-center">
           <div className="w-[90%] md:w-[60%] mx-auto">
@@ -24,13 +47,16 @@ const ProductSection = ({ title, description, image, reverse }) => (
           </div>
         </div>
         <div className="flex justify-center w-full my-6">
-          <button className="flex items-center gap-2 px-2 py-2 uppercase transition-transform duration-500 ease-in-out transform border rounded-full text-tertiary border-tertiary lg:px-4 hover:bg-tertiary hover:text-secondary hover:scale-110">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            className="flex items-center gap-2 px-2 py-2 uppercase transition-transform duration-500 ease-in-out transform border rounded-full text-tertiary border-tertiary lg:px-4 hover:bg-tertiary hover:text-secondary"
+          >
             explore
-          </button>
+          </motion.button>
         </div>
-      </div>
+      </motion.div>
     </div>
-  </div>
+  </motion.div>
 );
 
 const Ourproduct = () => {
