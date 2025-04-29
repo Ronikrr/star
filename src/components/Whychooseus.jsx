@@ -19,14 +19,14 @@ const whyChooseUsContent = [
         logo: "https://motibagems.com/assets/images/ic-why-choose-us.svg",
         title: "Trust",
         content: [
-            "Our company has established trust of thousands of our happy customers across the globe as we prioritize your trust above everything else, we promise to provide transparency to each transaction done. Join the thousands of satisfied customers, and experience the Brilliance of Motiba Gems. Your security and peace of mind are our top priorities.",
+            "Our company has established trust of thousands of our happy customers across the globe as we prioritize your trust above everything else, we promise to provide transparency to each transaction done. Join the thousands of satisfied customers, and experience the Brilliance of star impex. Your security and peace of mind are our top priorities.",
         ],
     },
     {
         logo: "https://motibagems.com/assets/images/ic-why-choose-us.svg",
         title: "Consistency",
         content: [
-            `At Motiba Gems, we are deeply committed to ensuring uninterrupted supply to our valued customers. We understand the critical importance of reliability and consistency in today's dynamic business landscape. That's why we have dedicated ourselves to meticulously planning and executing every aspect of our supply chain.`,
+            `At star impex, we are deeply committed to ensuring uninterrupted supply to our valued customers. We understand the critical importance of reliability and consistency in today's dynamic business landscape. That's why we have dedicated ourselves to meticulously planning and executing every aspect of our supply chain.`,
         ],
     },
 ];

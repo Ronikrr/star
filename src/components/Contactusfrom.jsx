@@ -1,60 +1,97 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PhoneInput from 'react-phone-number-input/input'
 import "react-phone-number-input/style.css";
 import { countryList } from '../utils/countrylist.utils';
+const initalState = {
+    firstname: '',
+    lastname: '',
+    phoneno: '',
+    country: "",
+    email: '',
+    message: ''
+}
 const Contactusfrom = () => {
+    const [fromdata, setFromdata] = useState(initalState)
+
+    const onChange = (e) => {
+        const { name, value } = e.target
+        setFromdata((prev) => ({
+            ...prev,
+            [name]: value
+        }))
+    }
+    const onsubmit = (e) => {
+        e.preventDefault()
+        console.log(fromdata)
+        setFromdata(initalState)
+    }
+    const handlePhoneChange = (value) => {
+        setFromdata((prev) => ({
+            ...prev,
+            phoneno: value,
+        }));
+    };
+
     return (
-        <form
+        <form onSubmit={onsubmit}
             className="grid gap-5 py-10 bg-white sm:grid-cols-2 sm:place-content-center max-md:px-6 lg:px-6"
         >
             <div className="grid gap-[.25rem]">
-                <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="inp-name">
+                <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="firstname">
                     First Name
                 </label>
                 <input
                     className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     type="text"
-                    name="name"
-                    id="inp-name"
+                    name="firstname"
+                    value={fromdata.firstname}
+                    onChange={onChange}
+                    id="firstname"
                     placeholder="Enter your first name" />
 
             </div>
             <div className="grid gap-[.25rem]">
-                <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="inp-surname">
+                <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="lastname">
                     Last Name
                 </label>
                 <input
                     className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     type="text"
-                    name="surname"
-                    id="inp-surname"
+                    value={fromdata.lastname}
+                    onChange={onChange}
+                    name="lastname"
+                    id="lastname"
                     placeholder="Enter your last name"
                 />
 
             </div>
             <div className="grid gap-5">
                 <div className="grid gap-[.25rem]">
-                    <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="inp-phone">
+                    <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="phoneno">
                         Phone
                     </label>
                     <PhoneInput
-                        id="inp-phone"
+                        id="phoneno"
                         defaultCountry="US"
                         placeholder="Enter phone number"
                         international
+                        value={fromdata.phoneno}
+                        onChange={handlePhoneChange}
                         countryCallingCodeEditable={false}
                         className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     />
                 </div>
                 <div className="grid gap-[.25rem]">
-                    <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="inp-country">
+                    <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="country">
                         Country
                     </label>
                     <div>
                         <select
                             className="w-full rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                             name="country"
-                            id="inp-country"
+                            value={fromdata.country}
+                            onChange={onChange}
+                            id="country"
                         >
                             <option disabled value="">
                                 Select Country
@@ -69,26 +106,30 @@ const Contactusfrom = () => {
                     </div>
                 </div>
                 <div className="grid gap-[.25rem]">
-                    <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="inp-email">
+                    <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="email">
                         Email
                     </label>
                     <input
                         className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                         type="text"
                         name="email"
-                        id="inp-email"
+                        value={fromdata.email}
+                        onChange={onChange}
+                        id="email"
                         placeholder="Enter your email"
                     />
                 </div>
             </div>
             <div className="grid grid gap-[.25rem]">
-                <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="inp-message">
+                <label className="ml-3 ml-3 text-14 leading-[1.25rem] font-semibold text-primary" htmlFor="message">
                     Message
                 </label>
                 <textarea
                     className="rounded-[1rem] border border-primary/20 px-[1rem] py-[0.75rem] "
                     name="message"
-                    id="inp-message"
+                    id="message"
+                    value={fromdata.message}
+                    onChange={onChange}
                     placeholder="Describe your message..."
                     rows={7}
 

@@ -109,7 +109,7 @@ export const labGrownDiamondsContent = {
                 title: "Cutting, Polishing, and Enhancing the Luster",
                 description: [
                     `The rough diamonds generated acquire identical chemical, physical, and optical characteristics as mined diamonds through this process. They are then meticulously cut and polished to yield a genuine, authentic, and exquisitely cultivated diamond.`,
-                    `Here at Motiba Gems, we have extensively researched lab-grown diamonds over the years, and in our efforts to make a positive environmental impact, we strive to offer the highest quality of lab-grown diamonds.`,
+                    `Here at star impex, we have extensively researched lab-grown diamonds over the years, and in our efforts to make a positive environmental impact, we strive to offer the highest quality of lab-grown diamonds.`,
                 ],
             },
         ],
@@ -133,5 +133,5 @@ export const jewelryDiamondsContent = {
         "In all Precious Metals like Gold, Silver, Platinum",
     ],
     otherContent:
-        "Motiba Gems presents premium custom jewelry to B2B customers across the globe as per their requirements & requests, please contact our representative for more information on it.",
+        "star impex presents premium custom jewelry to B2B customers across the globe as per their requirements & requests, please contact our representative for more information on it.",
 };

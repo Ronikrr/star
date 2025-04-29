@@ -8,7 +8,7 @@ export const aboutUsContent = [
     image: "https://motibagems.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Four-guarantee.66ffc5c7.webp&w=1200&q=75",
     title: "Our Guarantee",
     content: [
-      "Our Customers is regarded as an extension of our family. Upholding principles and adhering to ethical business standards are fundamental to our operations. Each diamond featured on our website undergoes meticulous quality assessments to ensure our customers receive superior products at competitive prices. Purchase from Motiba Gems guarantees premium quality and value for your investment.",
+      "Our Customers is regarded as an extension of our family. Upholding principles and adhering to ethical business standards are fundamental to our operations. Each diamond featured on our website undergoes meticulous quality assessments to ensure our customers receive superior products at competitive prices. Purchase from star impex guarantees premium quality and value for your investment.",
       "Our commitment to deliver excellence has kept us striving for quality, creativity, and customer satisfaction. With integration of technical innovations and expert craftsmanship, we produce a variety of finest cut diamonds, catering to unique needs of each customer.",
     ],
   },
@@ -36,7 +36,7 @@ const OurGuarantee = () => {
       <img loading="lazy" src={bgImage2} alt="shape in background" className="absolute bottom-0 left-0" />
       <div className="sm:col-span-10 sm:col-start-2">
         <div className="mx-3 my-8 lg:my-16">
-          <p className="text-center content-text text-primary">Motiba Gems was founded in 2002 by Pareshbhai Moradiya, with a manufacturing facility located in Surat. Over the years, the company has experienced significant business growth, supported by a skilled workforce. In 2017, Motiba Gems expanded its operations to include rough diamond imports from overseas. Today, the company stands as a prominent trader & supplier to B2B customers from all over the globe for both Certified and Non-Certified Diamonds in Natural and LGDs. As well as designer diamond jewelry.</p>
+          <p className="text-center content-text text-primary">star impex was founded in 2002 by Pareshbhai Moradiya, with a manufacturing facility located in Surat. Over the years, the company has experienced significant business growth, supported by a skilled workforce. In 2017, star impex expanded its operations to include rough diamond imports from overseas. Today, the company stands as a prominent trader & supplier to B2B customers from all over the globe for both Certified and Non-Certified Diamonds in Natural and LGDs. As well as designer diamond jewelry.</p>
         </div>
         <div className="grid gap-6 place-content-center">
           {

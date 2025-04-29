@@ -1,13 +1,13 @@
 
 export const privacyPolicyContent = [
     {
-        text: "Motiba Gems is committed to protecting the privacy of our website visitors and clients.",
+        text: "star impex is committed to protecting the privacy of our website visitors and clients.",
     },
     {
-        text: "We maintain the highest industry benchmarks in online privacy and opt-in marketing. For further details on how Motiba Gems implements opt-in email marketing with our clientele, kindly review our policy.",
+        text: "We maintain the highest industry benchmarks in online privacy and opt-in marketing. For further details on how star impex implements opt-in email marketing with our clientele, kindly review our policy.",
     },
     {
-        text: "Motiba Gems website uses strong security measures to keep your information safe from being lost, misused, or changed. We store your information in a safe place in a database at our data center.",
+        text: "star impex website uses strong security measures to keep your information safe from being lost, misused, or changed. We store your information in a safe place in a database at our data center.",
     },
     {
         text: "We never share, sell, or rent your personal information to anyone unless your advance permission, or if a court order tells us we have to. The information you give us is only seen by our employees who need it to contact you or send you emails regarding your account and orders.",
@@ -66,5 +66,5 @@ export const termsConditionContent = {
             ],
         },
     ],
-    note: "Motiba Gems reserves the rights to make changes to these Terms & Conditions at any time without prior notifications.",
+    note: "star impex reserves the rights to make changes to these Terms & Conditions at any time without prior notifications.",
 };
