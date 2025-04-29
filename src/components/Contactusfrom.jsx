@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PhoneInput from 'react-phone-number-input/input'
 import "react-phone-number-input/style.css";
 import { countryList } from '../utils/countrylist.utils';
+import emailjs from '@emailjs/browser';
 const initalState = {
     firstname: '',
     lastname: '',
@@ -23,8 +24,17 @@ const Contactusfrom = () => {
     const onsubmit = (e) => {
         e.preventDefault()
         console.log(fromdata)
-        setFromdata(initalState)
-    }
+        emailjs.send('service_csia6iy', 'template_3yxpude', fromdata, 'NuQv9XskxV05oXLmu')
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert("Form Submited Successfully!")
+                setFromdata(initalState)
+                
+            }, (err) => {
+                console.error('FAILED...', err);
+                alert("FAILED")
+            });
+    }   
     const handlePhoneChange = (value) => {
         setFromdata((prev) => ({
             ...prev,

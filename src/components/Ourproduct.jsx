@@ -82,7 +82,7 @@ const Ourproduct = () => {
   ];
 
   return (
-    <div className="relative pt-5">
+    <div className="relative pt-5  overflow-hidden ">
       <div className="mx-auto max-w-max">
         <h2 className="mb-1 font-bold uppercase new_font text-primary text-24">
           Our product
