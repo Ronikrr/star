@@ -2,7 +2,7 @@ import React from 'react';
 import vector_bg from "../assets/image/vector-bg-3.a112de0b.svg";
 import { Link } from 'react-router-dom';
 import { TbMessagePlus } from 'react-icons/tb';
-
+import video from '../assets/video/c7244fd0b29345d2ab1c5c3d92174df0.mp4'
 const Banner = ({ title = "", heroImage = "", description = "" }) => {
   return (
     <section className={`h-[70dvh] grid place-content-center relative`} style={{ clipPath: 'polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0% 0%)' }}>
@@ -10,7 +10,25 @@ const Banner = ({ title = "", heroImage = "", description = "" }) => {
       <img loading="lazy" src={vector_bg} alt='diamond white' className='absolute right-16 top-[30%] rotate-45' />
       <div className='absolute h-full w-full z-[-1] bg-tertiary/70' />
       <div className='absolute h-full w-full z-[-2]'>
-        {heroImage ? <img loading="lazy" src={heroImage} alt={`${title}`} className='object-cover object-center w-full h-full' /> : null}
+        {heroImage ? (
+          <img
+            loading="lazy"
+            src={heroImage}
+            alt={title}
+            className="object-cover object-center w-full h-full"
+          />
+        ) : (
+          <video
+            src={video}
+            loop
+            autoPlay
+            muted
+            playsInline
+            className="object-cover object-center w-full h-full"
+            title={title}
+          />
+        )}
+
       </div>
       <h1 className='mb-3 text-center uppercase new_font text-30 lg:text-36 text-secondary'>{title}</h1>
       <div className="flex items-center justify-center w-full">
