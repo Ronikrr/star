@@ -36,7 +36,7 @@ const OurGuarantee = () => {
       <img loading="lazy" src={bgImage2} alt="shape in background" className="absolute bottom-0 left-0" />
       <div className="sm:col-span-10 sm:col-start-2">
         <div className="mx-3 my-8 lg:my-16">
-          <p className="text-center content-text text-primary">star impex was founded in 2002 by Pareshbhai Moradiya, with a manufacturing facility located in Surat. Over the years, the company has experienced significant business growth, supported by a skilled workforce. In 2017, star impex expanded its operations to include rough diamond imports from overseas. Today, the company stands as a prominent trader & supplier to B2B customers from all over the globe for both Certified and Non-Certified Diamonds in Natural and LGDs. As well as designer diamond jewelry.</p>
+          <p className="text-center content-text text-primary">star impex was founded in 2002 , with a manufacturing facility located in Surat. Over the years, the company has experienced significant business growth, supported by a skilled workforce. In 2017, star impex expanded its operations to include rough diamond imports from overseas. Today, the company stands as a prominent trader & supplier to B2B customers from all over the globe for both Certified and Non-Certified Diamonds in Natural and LGDs. As well as designer diamond jewelry.</p>
         </div>
         <div className="grid gap-6 place-content-center">
           {
